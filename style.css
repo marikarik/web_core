@@ -40,6 +40,11 @@ body{
    align-items: center;
 }
 
+.icon:hover{
+    filter: brightness(85%);
+    transition: 0.5s;
+}
+
 .header__burger{
     margin-right: 17px;
     /* border: 0; */
@@ -149,6 +154,10 @@ body{
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
+.services__navigation-items::-webkit-scrollbar{
+    display: none;
+  }
 
 
 .services__navigation-btn{
@@ -369,3 +378,137 @@ body{
        }
 
 }  
+
+/* стили для бокового меню */
+
+.menu{
+    background-color: #FFFFFF;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    box-shadow: 16px 0 52px #0E185033;
+    overflow-y: auto;
+  }
+  
+  .menu::-webkit-scrollbar{
+    display: none;
+  }
+  .header-menu{
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-menu-container{
+    
+    margin-top: 18px;
+    margin-bottom: 46px;
+  }
+  
+  .header__btn-close{
+    margin: 0 17px 0 24px;
+  }
+  
+  .header__btn-search{
+    margin-left: auto;
+    margin-right: 24px;
+  }
+  
+  .menu__list-btn{
+    list-style-type: none;                          /* обнул стилей списк*/
+    padding: 0 0 0 24px;
+    margin: 0;
+  
+  }
+  
+  .menu__btn{
+    margin-bottom: 32px;                            
+  }
+  
+  .menu__btn-name{
+    text-decoration: none;                          /* обнул стилей ссылок*/
+    color: rgba(27, 28, 33, 1);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .menu__btn-name:active{
+    color: #7E7E82;
+  }
+
+   .menu__btn-name:active::before{ 
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    left: -24px;
+    top: 50%;                            /* сдвиг начала эл с половины высоты родител*/
+    transform: translateY(-50%);         /* вертикальное центрир относительно родителя, свдвиг эл вверх на половину своей высоты*/
+  }
+
+  
+  
+  .contacts{
+    display: grid;
+    gap: 14px;
+  }
+  
+  .contacts-container{
+    margin-left: 24px;
+    margin-bottom: 40px;
+    height: 124px;
+    margin-top: auto;
+    
+  }
+  
+  .wrapper-icon{
+    display: flex;
+    gap: 16px;
+  }
+  
+  .contacts__email{
+    text-decoration: none; /* обнул стилей ссылок*/
+    color: rgba(27, 28, 33, 1);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+  }
+  
+  .contacts__tel{
+    text-decoration: none; 
+    color: rgba(27, 28, 33, 1);
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+  }
+  
+  .menu__lang{
+    margin-left: 24px;
+    margin-bottom: 32px;
+    cursor: pointer;
+  
+  }
+  
+  .menu__lang-radio{
+    display: none;
+  }
+  
+  .menu__lang-name{
+    cursor: pointer;
+    color: rgba(27, 28, 33, 1);
+    font-weight: 500;
+  }
+  .menu__lang-radio:checked + .menu__lang-name{
+    color: rgba(126, 126, 130, 1);
+  
+  }
