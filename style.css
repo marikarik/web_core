@@ -437,6 +437,10 @@ body{
     position: relative;
   }
 
+  .menu__btn-name:hover{
+        opacity: 0.75; 
+  }
+
   .menu__btn-name:active{
     color: #7E7E82;
   }
@@ -470,7 +474,7 @@ body{
     gap: 16px;
     list-style-type: none;
     padding: 0;
-    margin: 0 0 14px 0;
+    margin: 0 0 16px 0;
   }
 
   .contacts__info{
@@ -517,4 +521,11 @@ body{
     font-family: 'TT Lakes';
     font-size: 16px;
     font-weight: 500;
+  }
+
+  .menu__btn-lng:hover{
+    opacity: 0.75; 
+  }
+  .menu__btn-lng:focus{
+    color: #7E7E82;
   }
