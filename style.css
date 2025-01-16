@@ -38,11 +38,11 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
+   transition: 0.5s;
 }
 
 .icon:hover{
     filter: brightness(85%);
-    transition: 0.5s;
 }
 
 .header__burger{
