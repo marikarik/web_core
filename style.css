@@ -441,11 +441,11 @@ body{
         opacity: 0.75; 
   }
 
-  .menu__btn-name:active{
+  .menu__btn-name:focus{
     color: #7E7E82;
   }
 
-   .menu__btn-name:active::before{ 
+   .menu__btn-name:focus::before{ 
     content: "";
     position: absolute;
     width: 4px;
@@ -517,6 +517,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'TT Lakes';
+    color: #1B1C21;
     font-size: 16px;
     font-weight: 500;
   }
