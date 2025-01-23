@@ -695,7 +695,7 @@ body{
         flex-wrap: wrap;
         row-gap: 2.08vw;
         column-gap: 3.125vw;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     .section__content--all{
@@ -747,7 +747,6 @@ body{
     .section__content{
         row-gap: 16px;
         column-gap: 32px;
-        justify-content: space-between;
     }
 
     .swiper-slide{
