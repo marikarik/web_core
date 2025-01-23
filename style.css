@@ -739,9 +739,15 @@ body{
 
 
 @media(min-width: 1120px){
-    .section{
-        width: 1120px;
+    .section__conteiner-brands{
+        max-width: 1120px;
         margin: 0 auto;
+
+    }
+    .section__content{
+        row-gap: 16px;
+        column-gap: 32px;
+        justify-content: space-between;
     }
 
     .swiper-slide{
