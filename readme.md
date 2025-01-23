@@ -1,1 +1,1 @@
-https://marikarik.github.io/web_core/section
+https://marikarik.github.io/web_core/swiper
