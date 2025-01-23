@@ -556,6 +556,7 @@ body{
   }
 
   .brand-card{
+    cursor: pointer;
     box-sizing: border-box;
     position: relative;
     width: 240px;
@@ -589,7 +590,7 @@ body{
 } 
 
   .btn-more--margin{
-    margin: 0 0 0 24px;
+    margin: 0 0 0 26px;
     display: none;
 }
 
@@ -657,7 +658,7 @@ body{
 } 
 
   .btn-more--margin{
-    margin: 0 0 0 24px;
+    margin: 0 0 0 26px;
     display: none;
 }
 
@@ -688,7 +689,7 @@ body{
     }
     .section__content{
         width: auto;
-        height: 170px;
+        height: 175px;
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
@@ -714,16 +715,34 @@ body{
     }
 
     .btn-more{
+        cursor: pointer;
         display: flex;
     }
 
+    .btn-text:hover{
+        opacity: 0.75; 
+    }
     .section__content{
         margin: 24px;
     }
+
+    .btn-icon {
+        transition-duration: 0.5s;
+
+    }
+    .btn-icon--rotate{
+        rotate: 180deg;
+    }
+
+    
 }
 
 
 @media(min-width: 1120px){
+    .section{
+        width: 1120px;
+        margin: 0 auto;
+    }
 
     .swiper-slide{
         width: 240px;

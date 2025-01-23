@@ -1,1 +1,1 @@
-https://marikarik.github.io/web_core/sidebar
+https://marikarik.github.io/web_core/section
