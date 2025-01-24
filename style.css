@@ -653,13 +653,14 @@ body{
     }
     .section__content{
         width: auto;
-        height: 175px;
+        height: 172px;
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
         row-gap: 2.08vw;
         column-gap: 3.125vw;
         justify-content: flex-start;
+        box-sizing: border-box; 
     }
 
     .section__content--all{
@@ -675,7 +676,12 @@ body{
     }
 
     .section__brand-card{
+        cursor: pointer;
         width: 29vw;
+    }
+
+    .section__brand-card:hover{
+        box-shadow: 0px 0px 6px rgba(188, 186, 186, 0.5)
     }
 
     .btn-more{
@@ -687,7 +693,8 @@ body{
         opacity: 0.75; 
     }
     .section__content{
-        margin: 24px;
+        margin: 18px; 
+        padding: 6px;
     }
 
     .btn-icon {
@@ -695,7 +702,7 @@ body{
 
     }
     .btn-icon--rotate{
-        rotate: 180deg;
+        rotate: -180deg;
     }
 
     
