@@ -594,7 +594,8 @@ body{
     position: relative;
     width: 240px;
     height: 72px;
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 0;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(234, 234, 234, 1);
@@ -610,7 +611,7 @@ body{
 
 }
 
-  .section__card-logo{
+  /* .section__card-logo{
     content: '';
     position: absolute;
     bottom: 50%;
@@ -619,7 +620,7 @@ body{
     -moz-transform: translateY(50%); 
     -ms-transform: translateY(50%);
     -o-transform: translateY(50%);
-} 
+}  */
 
   .btn-more--margin{
     margin: 0 0 0 26px;
